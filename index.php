@@ -30,44 +30,16 @@
 			bottom:0px;
 		}
 		.footer {
-			margin-top: 20px;
+			padding-top: 25px;
 			height: 80px;
 			background-color: #232323;
 			color: #FBFEF9;
-		}
-		.footer .col-6, .footer .col-5 {
-			margin-top: 30px;
 		}
 	</style>
 </head>
 <body>
 	<div class="header">
-		<div class="container-fluid d-flex flex-row-reverse">
-			<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-			    <div class="container-fluid">
-				    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				      		<span class="navbar-toggler-icon"></span>
-				    	</button>
-			    	<div class="collapse navbar-collapse ml-5" id="navbarNav">
-				      	<ul class="navbar-nav">
-					        <li class="nav-item">
-					          	<a class="nav-link active" aria-current="page" href="#">Новости</a>
-					        </li>
-					        <li class="nav-item">
-					          	<a class="nav-link" href="#">Аренда</a>
-					        </li>
-					        <li class="nav-item">
-					          	<a class="nav-link" href="#">Акции</a>
-					        </li>
-					        <li class="nav-item">
-					          	<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Куда потратить деньги</a>
-					        </li>
-				        </ul>
-			    	</div>
-			  	</div>
-			</nav>
-		</div>
-
+		<?php include('header.php')?>
 		<div class="container-fluid">
 			<div class="row">
 				<h3 class="text-center slog">Крутой слоган</h3>
@@ -96,12 +68,7 @@
 
 	<div class="container mt-5">
 		<div class="row">
-			<div class="col-1">
-				<div class="block"></div>
-			</div>
-			<div class="col-11">
-				<h1>НОВОСТИ</h1>
-			</div>
+			<h1>НОВОСТИ</h1>
 		</div>
 
 		<div class="container mt-5">
@@ -140,17 +107,7 @@
 		</div>
 	</div>
 
-	<div class="footer mt-5">
-		<div class="row">
-			<div class="col-6 d-flex justify-content-center">
-				<p>Сайт был разработан командой "Бутылка Коламбии"</p>
-			</div>
-			<div class="col-5 d-flex justify-content-center">
-				<p>2021</p>
-			</div>
-		</div>
-	</div>
-
+<?php include('footer.php') ?>
 
 
 
