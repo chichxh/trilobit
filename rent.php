@@ -3,29 +3,71 @@
 <head>
 	<title>Трилобит - Городская среда</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<style type="text/css">
 		.footer {
 			padding-top: 25px;
 			height: 80px;
-			background-color: #232323;
+			background-color: #2A363B;
 			color: #FBFEF9;
+		}
+		body{
+			font-family: 'Montserrat', Arial;
+			background-color: #2A363B;
+			color: #fff;
+		}
+		.header {
+			height: 620px;
+			background-color: #FECEA8;
+		}
+		.header h1 {
+			margin-top: 300px;
+			color: #22181C;
+			font-weight: bold;
+		}
+		.rentThing {
+			color: #22181C;
+			padding-top: 650px;
+			background-image: url(img/rentThing.png);
+			height: 1300px;
+		}
+		a {
+			color: #22181C;
+			text-decoration: none;
+			transition-duration: 0.3s;
+		}
+		a:hover {
+			color: #4A3D42;
 		}
 	</style>
 </head>
 <body>
-	<?php include('header.php')?>
+	<div class="header">
+		<?php include('header.php')?>
 
-	<div class="container mt-5">
-		<div class="row">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="container-fluid">
+			<div class="row">
+				<h1 class="text-center slog">АРЕНДА</h1>
+			</div>
 		</div>
+	</div>
 
+	<div class="container-fluid mt-5">
 		<div class="row">
+			<h1 class="text-left">Виды аренды</h1>
+		</div>
+		<div class="row rentThing text-end" style="z-index: 90;">
+			<h1><a href="rent.php">Аренда помещения</a></h1>
+		</div>
+		<div class="row rentThing text-end" style="z-index: 89; margin-top: -680px">
+			<h1><a href="rent.php">Аренда площадки</a></h1>
+		</div>
+		<div class="row rentThing text-end" style="z-index: 88; margin-top: -680px;">
+			<h1><a href="rent.php">Аренда сцены</a></h1>
+		</div>	
+
+		<!-- <div class="row">
 			<h1>ПОДАТЬ ЗАЯВКУ</h1>
 			<form action="thanks.php" method="post">
 				<div class="mb-3">
@@ -42,8 +84,10 @@
 				</div>
 				<button name="send" type="submit" class="btn btn-light">Подать заявку</button>
 			</form>
-		</div>
+		</div> -->
 	</div>
+
+	<?php include('footer.php')?>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

@@ -20,9 +20,25 @@ if ($link == false){
 <head>
 	<title>Трилобит - Городская среда</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<style type="text/css">
+		body{
+			font-family: 'Montserrat', Arial;
+			background-color: #2A363B;
+			color: #fff;
+		}
 		.header {
+			background-image: url(img/header.jpg);
 			height: 720px;
+			background-size: cover;
+			color: #fff;
+		}
+		.nav-link	 {
+			color: #fff;
+		}
+		.header h1{
+			font-family: 'Archivo Black';
 		}
 		.slog {
 			padding-top: 300px;
@@ -31,9 +47,6 @@ if ($link == false){
 			width: 10px;
 			height: 70px;
 			background-color: #c4c4c4;
-		}
-		.col-1 {
-			/*margin-right: 20px;*/
 		}
 		.card {
 			border: 0;
@@ -59,20 +72,38 @@ if ($link == false){
 		<?php include('header.php')?>
 		<div class="container-fluid">
 			<div class="row">
-				<h3 class="text-center slog">Крутой слоган</h3>
+				<h1 class="text-center slog">Trilobite</h1>
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-2 mx-auto mt-5">
-				<button type="button" class="btn btn-secondary">Пафосная кнопка</button>
-			</div>
-		</div>
 
 		<div class="row mt-5">
-			<div class="col-8 mx-auto text-center">
+			<div class="col-9 mx-auto text-left">
+				<h1>О проекте</h1>
+				<p>Целью проекта является разработка на основе анализа современного состояния территории функционально-планировочной и архитектурно-пространственной концепции общественного городского пространства.</p>
+			</div>
+			<div class="col-9 mx-auto text-left mt-5">
+				<h1>Для чего сайт?</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-9 mx-auto text-left mt-5">
+				<h1>Коротко о бонусах</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-9 mx-auto text-left mt-5">
+				<h1>Топы</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -84,7 +115,7 @@ if ($link == false){
 	</div>
 
 	<div class="container mt-5">
-		<div class="row">
+		<!-- <div class="row">
 			<h1>НОВОСТИ</h1>
 		</div>
 
@@ -102,7 +133,7 @@ if ($link == false){
 				      		</div>
 				    	</div>
 				  	</div>
-				</div>
+				</div> -->
 
 
 				<!-- <?php while ($row = mysqli_fetch_array($result)): ?>
