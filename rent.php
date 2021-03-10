@@ -58,13 +58,13 @@
 			<h1 class="text-left">Виды аренды</h1>
 		</div>
 		<div class="row rentThing text-end" style="z-index: 90;">
-			<h1><a href="rent.php">Аренда помещения</a></h1>
+			<h1><a href="rentP.php">Аренда помещения</a></h1>
 		</div>
 		<div class="row rentThing text-end" style="z-index: 89; margin-top: -680px">
-			<h1><a href="rent.php">Аренда площадки</a></h1>
+			<h1><a href="rentP.php">Аренда площадки</a></h1>
 		</div>
 		<div class="row rentThing text-end" style="z-index: 88; margin-top: -680px;">
-			<h1><a href="rent.php">Аренда сцены</a></h1>
+			<h1><a href="rentP.php">Аренда сцены</a></h1>
 		</div>	
 
 		<!-- <div class="row">

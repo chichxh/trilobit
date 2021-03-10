@@ -64,7 +64,7 @@
 			</div>
 			<div class="row">
 				<div class="col-9 mx-auto">
-					<a href="#">Подробнее</a>
+					<a href="skate.php">Подробнее</a>
 				</div>
 			</div>
 		</div>
@@ -81,7 +81,7 @@
 			</div>
 			<div class="row">
 				<div class="col-9 mx-auto">
-					<a href="#">Подробнее</a>
+					<a href="rollers.php">Подробнее</a>
 				</div>
 			</div>
 		</div>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="row">
 				<div class="col-9 mx-auto">
-					<a href="#">Подробнее</a>
+					<a href="boat.php">Подробнее</a>
 				</div>
 			</div>
 		</div>
@@ -115,7 +115,7 @@
 			</div>
 			<div class="row">
 				<div class="col-9 mx-auto">
-					<a href="#">Подробнее</a>
+					<a href="foodCort.php">Подробнее</a>
 				</div>
 			</div>
 		</div>
