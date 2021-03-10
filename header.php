@@ -16,7 +16,7 @@
 			          	<a class="nav-link" href="promotions.php">Акции</a>
 			        </li>
 			        <li class="nav-item">
-			          	<a class="nav-link" href="#">Развлекательные точки</a>
+			          	<a class="nav-link" href="dots.php">Развлекательные точки</a>
 			        </li>
 			        <li class="nav-item">
 			          	<a class="nav-link" href="myAcc.php">Считать сколько потратил</a>
