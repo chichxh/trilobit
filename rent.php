@@ -66,25 +66,6 @@
 		<div class="row rentThing text-end" style="z-index: 88; margin-top: -680px;">
 			<h1><a href="rentP.php">Аренда сцены</a></h1>
 		</div>	
-
-		<!-- <div class="row">
-			<h1>ПОДАТЬ ЗАЯВКУ</h1>
-			<form action="thanks.php" method="post">
-				<div class="mb-3">
-					<label for="exampleFormControlTextarea1" class="form-label">Ф.И.О. / Наименование компании</label>
-					<input class="form-control" type="text" aria-label="default input example" name="name">
-				</div>
-				<div class="mb-3">
-				  	<label for="exampleFormControlTextarea1" class="form-label">Зачем вам нужно арендовать место</label>
-				  	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="decription"></textarea>
-				</div>
-				<div class="mb-3">
-					<label for="exampleFormControlTextarea1" class="form-label">Контактные данные</label>
-					<input class="form-control" type="text" aria-label="default input example" name="contact">
-				</div>
-				<button name="send" type="submit" class="btn btn-light">Подать заявку</button>
-			</form>
-		</div> -->
 	</div>
 
 	<?php include('footer.php')?>

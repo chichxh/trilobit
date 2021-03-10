@@ -50,6 +50,12 @@
 		</div>
 	</div>
 
+	<div class="container">
+		<div class="col-6 mx-auto mt-5">
+			<button class="btn btn-secondary"> <a href="myAcc.php">Начать считать сколько ты потратишь, посещая эти точки</a></button>
+		</div>
+	</div>
+
 	<div class="container-fluid mt-5 own">
 		<div class="text-start">
 			<div class="row">

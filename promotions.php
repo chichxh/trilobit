@@ -22,7 +22,7 @@
 			font-weight: bold;
 		}
 		.footer {
-			padding-top: 25px;
+			padding-top: 15px;
 			height: 80px;
 			background-color: #232323;
 			color: #FBFEF9;
@@ -47,7 +47,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container mt-5">
 		<div class="row">
 			<h1>Подарок триллобита</h1>
 			<p>Как получить подарок? 
@@ -58,7 +58,9 @@
 		</div>
 	</div>
 
-	<?php include('footer.php')?>
+	<div class="footer fixed-bottom">
+		<?php include('footer.php')?>
+	</div>
 </body>
 </head>
 </html>

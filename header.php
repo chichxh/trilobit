@@ -18,9 +18,6 @@
 			        <li class="nav-item">
 			          	<a class="nav-link" href="dots.php">Развлекательные точки</a>
 			        </li>
-			        <li class="nav-item">
-			          	<a class="nav-link" href="myAcc.php">Считать сколько потратил</a>
-			        </li>
 		        </ul>
 	    	</div>
 	  	</div>
