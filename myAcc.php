@@ -24,18 +24,37 @@ if ($link == false){
 	<style type="text/css"></style>
 </head>
 <body>
-	<button class="btn btn-secondary" id="generateQRCode" name="send">Сгенерироваь код</button>
-
-	 <div id="qrCodeOutput" class="text-center">
-            Здесь будет сгенерированный QR-код
-        </div>
+	<?php include('header.php')?>
+	<div class="container">
+		<h1>Если вы хотите посчитать ваши расходы сразу используйте это</h1>
+	</div>
+	<div class="container mt-5">
+		<form action="myAcc.php" method="POST">
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label"></label>
+				<input class="form-control" type="hidden" name="code" id="code">
+			</div>
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">Напишите ваше Ф.И.О.</label>
+				<input class="form-control" type="text" name="user">
+			</div>
+			<button name="send" class="btn btn-light">Начать отсчет</button>
+		</form>
+		<div class="col-6 mt-4">
+			<button id="generateQRCode" class="btn btn-light">Сгенерировать код</button>
+		</div>
+	</div>
+    <div class="container">
+    	<div class="row d-flex justify-content-center">
+    		<div id="qrCodeOutput" class="mt-5">
+		        <p>Нажми на кнопку, чтобы увидеть свой персональный код, можете сделать скриншот</p>
+		    </div>
+    	</div>
+    </div>
 
 	<script src="http://cosmic.mearie.org/2011/01/qrjs/qr.js"></script>
     <script>
-
         const el = (selector) => document.querySelector(selector);
-
-
 
         el('#generateQRCode').addEventListener('click', function() {
            
@@ -43,21 +62,23 @@ if ($link == false){
 
             var array = new Uint32Array(10);
 			window.crypto.getRandomValues(array);
-            let text = array;
 
             qrCodeOutput.innerHTML = "";
 
-            qrCodeOutput.append(QRCode.generateHTML(text, {}))
-        });
+            qrCodeOutput.append(QRCode.generateHTML(array, {}))	
 
+            document.getElementById("code").value=array;
+        });
     </script>
 
-    <?php 
-    	if (isset($_POST['send'])) {
 
-    	$queryDost = "INSERT INTO users (code, user) VALUES ('". $_POST['name'] ."', '". $_POST['decription'] ."')";
-        $resDost = mysqli_query($link, $queryDost);
-    }
-     ?>
+    <?php 
+		if (isset($_POST['send'])) {
+		$query = "INSERT INTO users (code, user) VALUES ('". $_POST['code'] ."', '". $_POST['user'] ."')";
+	    $res = mysqli_query($link, $query);
+	}
+	 ?>
+    
 </body>
 </html>
+
