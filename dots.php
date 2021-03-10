@@ -57,7 +57,7 @@
 	</div>
 
 	<div class="container-fluid mt-5 own">
-		<div class="text-start">
+		<div class="text-start mb-5">
 			<div class="row">
 				<div class="col-9 mx-auto">
 					<h1>Скейтбординг</h1>
@@ -74,8 +74,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="text-end mt-5">
-			<div class="row">
+		<div class="text-end mt-5 mb-5">
+			<div class="row mt-5">
 				<div class="col-9 mx-auto">
 					<h1>Ролики</h1>
 				</div>
@@ -91,7 +91,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="text-start mt-5" >
+		<div class="text-start mt-5 mb-5">
 			<div class="row">
 				<div class="col-9 mx-auto">
 					<h1>Лодки</h1>

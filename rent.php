@@ -19,17 +19,16 @@
 		}
 		.header {
 			height: 620px;
-			background-color: #FECEA8;
+			background-image: url(img/rent.png);
 		}
 		.header h1 {
-			margin-top: 300px;
+			margin-top: 250px;
 			color: #22181C;
 			font-weight: bold;
 		}
 		.rentThing {
 			color: #22181C;
 			padding-top: 650px;
-			background-image: url(img/rentThing.png);
 			height: 1300px;
 		}
 		a {
@@ -48,7 +47,7 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<h1 class="text-center slog">АРЕНДА</h1>
+				<h1 class="text-center">АРЕНДА</h1>
 			</div>
 		</div>
 	</div>
@@ -57,13 +56,13 @@
 		<div class="row">
 			<h1 class="text-left">Виды аренды</h1>
 		</div>
-		<div class="row rentThing text-end" style="z-index: 90;">
+		<div class="row rentThing text-end" style="z-index: 90; background-image: url(img/rentThing.png);">
 			<h1><a href="rentP.php">Аренда помещения</a></h1>
 		</div>
-		<div class="row rentThing text-end" style="z-index: 89; margin-top: -680px">
+		<div class="row rentThing text-end" style="z-index: 89; margin-top: -680px; background-image: url(img/rentThing1.png);">
 			<h1><a href="rentP.php">Аренда площадки</a></h1>
 		</div>
-		<div class="row rentThing text-end" style="z-index: 88; margin-top: -680px;">
+		<div class="row rentThing text-end" style="z-index: 88; margin-top: -680px; background-image: url(img/rentThing2.png);">
 			<h1><a href="rentP.php">Аренда сцены</a></h1>
 		</div>	
 	</div>
