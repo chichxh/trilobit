@@ -13,7 +13,10 @@
 			          	<a class="nav-link" href="rent.php">Аренда</a>
 			        </li>
 			        <li class="nav-item">
-			          	<a class="nav-link" href="#">Акции</a>
+			          	<a class="nav-link" href="promotions.php">Акции</a>
+			        </li>
+			        <li class="nav-item">
+			          	<a class="nav-link" href="myAcc.php">Кабинет</a>
 			        </li>
 			        <li class="nav-item">
 			          	<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Куда потратить деньги</a>
