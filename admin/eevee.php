@@ -32,6 +32,7 @@ if ($link == false){
 			border-radius: 30px;
 			padding: 20px 0;
 			text-align: center;
+			height: 480px;
 		}
 		a {
 			color: #fff;
@@ -42,19 +43,25 @@ if ($link == false){
 			color: #c4c4c4;
 		}
 	</style>
-</head>
+</head>	
 <body>
 	<?php include('header.php')?>
-	<div class="container">
+
+	<div class="contaibner-fluid">
+		<div class="row mt-5 mb-5">
+			<div class="col-5">
+				<a href="control.php">Обратно на Галвную</a>
+			</div>
+			<div class="col-7">
+				<h1 class=" fw-bold">Изменить ивенты</h1>
+			</div>
+		</div>
 		<div class="row">
-			<div class="col-9 mb-5 mt-5 round mx-auto">
-				<a href="dots.php">Изменить данные развлекательных точек</a>
+			<div class="col-5 round mx-auto">
+				<h1>Удалить существующий</h1>
 			</div>
-			<div class="col-9 mb-5 round mx-auto">
-				<a href="eevee.php">Добавить Ивент/Акции/Конкурсы</a>
-			</div>
-			<div class="col-9 mb-5 round mx-auto">
-				<a href="view.php">Посмотреть заявки</a>
+			<div class="col-5 round mx-auto">
+				<h1>Добавить новый</h1>
 			</div>
 		</div>
 	</div>

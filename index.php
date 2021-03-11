@@ -69,7 +69,7 @@ $result = mysqli_query($link, $sql);
 		<?php include('header.php')?>
 		<div class="container-fluid">
 			<div class="row">
-				<h1 class="text-center slog">Trilobite</h1>
+				<h1 class="text-center slog">Trilobit</h1>
 			</div>
 		</div>
 	</div>
