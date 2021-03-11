@@ -1,10 +1,11 @@
 <div class="container-fluid d-flex flex-row-reverse">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-	    <div class="container-fluid">
-		    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		      		<span class="navbar-toggler-icon"></span>
-		    	</button>
-	    	<div class="collapse navbar-collapse ml-5" id="navbarNav">
+	<nav class="navbar navbar-expand-lg container-fluid navbar-dark bg-transparent d-flex justify-content-between">
+	    	<div class="col-6">
+	    		<a class="navbar-brand" href="#">Trilobite</a>
+		    	<a href="myAcc.php"><img src="img/qr.png"></a>
+		    	<a href="merch.php"><img src="img/trill.png"></a>
+	    	</div>
+		   	<div class="collapse navbar-collapse ml-5" id="navbarNav">
 		      	<ul class="navbar-nav">
 			        <li class="nav-item">
 			          	<a class="nav-link" aria-current="page" href="index.php">Главная</a>
@@ -19,7 +20,6 @@
 			          	<a class="nav-link" href="dots.php">Развлекательные точки</a>
 			        </li>
 		        </ul>
-	    	</div>
-	  	</div>
+		   	</div>
 	</nav>
 </div>
