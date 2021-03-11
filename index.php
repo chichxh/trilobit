@@ -1,18 +1,9 @@
 <?php
 
-$database = 'trilobit';
-$user = 'root';
-$password = 'root';
-$host = 'localhost';
+require 'connect.php';
 
-$mysqli = new mysqli($host, $user, $password, $database);
-
-$link = mysqli_connect($host, $user, $password, $database);
-
-if ($link == false){
-	print("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error());
-}
-
+$sql = 'SELECT * FROM top';
+$result = mysqli_query($link, $sql);
 ?>
 
 <!DOCTYPE html>
@@ -98,8 +89,20 @@ if ($link == false){
 				<h1>Коротко о бонусах</h1>
 				<p>Посещая сайт и показывая актиность в нем, у вас появится возможность получить разные скидки и плюшки.</p>
 			</div>
+
 			<div class="col-9 mx-auto text-left mt-5">
-				<h1>Топы</h1>
+				<h1 class="mb-5">Топ</h1>
+				<?php while ($row = mysqli_fetch_array($result)): ?>
+					<div class="row mb-3">
+						<div class="col-4">
+							<img src="<?= $row['img']; ?>" width="100%">
+						</div>
+						<div class="col-8 text-center">
+							<h1><?= $row['dot']; ?></h1>
+						</div>
+					</div>
+				<?php endwhile; ?>
+				
 				<?php 
 				 // select dot, clicks from table where yx=1 ORDER BY clicks ASC;
 				 ?>

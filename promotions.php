@@ -27,6 +27,12 @@
 			background-color: #232323;
 			color: #FBFEF9;
 		}
+		.red {
+			color: #E84A5F;
+		}
+		h1 {
+			font-weight: bold;
+		}
 	</style>
 <body>
 	<div class="header">
@@ -35,10 +41,10 @@
 		<div class="container-fluid">
 			<div class="row mt-5">
 				<div class="col-4">
-					<h1 class="text-center">ИВЕНТЫ</h1>
+					<h1 class="text-center">АКЦИИ</h1>
 				</div>
 				<div class="col-4">
-					<h1 class="text-center">АКЦИИ</h1>
+					<h1 class="text-center">ИВЕНТЫ</h1>
 				</div>
 				<div class="col-4">
 					<h1 class="text-center">КОНКУРСЫ</h1>
@@ -47,6 +53,27 @@
 		</div>
 	</div>
 
+	<div class="container mt-5">
+		<div class="flex-row-reverse">
+			<h1>Хочешь устроить своё мероприятие?</h1>
+			<div class="col-12 d-flex mt-4">
+				<h1 class="me-5 red">I.</h1>
+				<h1>Перейди во вкладку аренда</h1>
+			</div>
+			<div class="col-11 d-flex">
+				<h1 class="me-5 red">II.</h1>
+				<h1>Выбери нужное для тебя место</h1>
+			</div>
+			<div class="col-10 d-flex">
+				<h1 class="me-5 red">III.</h1>
+				<h1>Заполни заявку</h1>
+			</div>
+			<div class="col-9 d-flex">
+				<h1 class="me-5 red">IV.</h1>
+				<h1>Жди обратной связи</h1>
+			</div>
+		</div>
+	</div>
 	<div class="container mt-5">
 		<div class="row">
 			<h1>Подарок триллобита</h1>
