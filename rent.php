@@ -57,13 +57,13 @@
 			<h1 class="text-left">Виды аренды</h1>
 		</div>
 		<div class="row rentThing text-end" style="z-index: 90; background-image: url(img/rentThing.png);">
-			<h1><a href="rentP.php">Аренда помещения</a></h1>
+			<h1 class="fw-bolder"><a href="rentP.php">Аренда помещения</a></h1>
 		</div>
-		<div class="row rentThing text-end" style="z-index: 89; margin-top: -680px; background-image: url(img/rentThing1.png);">
-			<h1><a href="rentP.php">Аренда площадки</a></h1>
+		<div class="row rentThing text-end" style="z-index: 89; margin-top: -680px; background-image: url(img/rentThing.png);">
+			<h1 class="fw-bolder"><a href="rentP.php">Аренда площадки</a></h1>
 		</div>
 		<div class="row rentThing text-end" style="z-index: 88; margin-top: -680px; background-image: url(img/rentThing2.png);">
-			<h1><a href="rentP.php">Аренда сцены</a></h1>
+			<h1 class="fw-bolder"><a href="rentP.php">Аренда сцены</a></h1>
 		</div>	
 	</div>
 

@@ -65,7 +65,7 @@ if ($link == false){
         $query = "INSERT INTO rent (name, contact, description) VALUES ('". $_POST['name'] ."', '". $_POST['contact'] ."', 
         '". $_POST['description'] ."')";
         $res = mysqli_query($link, $query);
-    }
- ?>
+	    }
+	 ?>
 </body>
 </html>

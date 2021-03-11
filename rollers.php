@@ -1,23 +1,13 @@
-<?php
+<?php 
+ require 'connect.php';
 
-$database = 'trilobit';
-$user = 'root';
-$password = 'root';
-$host = 'localhost';
+    $sql = 'SELECT * FROM rollerscomm';
+	$result = mysqli_query($link, $sql);
 
-$mysqli = new mysqli($host, $user, $password, $database);
-
-$link = mysqli_connect($host, $user, $password, $database);
-
-if ($link == false){
-	print("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error());
-}
-
-$sql = 'SELECT * FROM rollerscomm';
-$result = mysqli_query($link, $sql);
-
-?>
-
+	$available = 7;
+	$curent = 28;
+	$status = "Открыто";
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +38,10 @@ $result = mysqli_query($link, $sql);
 		a:hover {
 			color: #c4c4c4;
 		}
+		.round {
+			background-color: #1A2326;
+			border-radius: 30px;
+			padding: 20px 0;
 	</style>
 </head>
 <body>
@@ -60,7 +54,7 @@ $result = mysqli_query($link, $sql);
 			</div>
 		</div>
 	</div>
-	<div class="container mt-5">
+	<div class="container mt-5 mb-5">
 		<div class="row">
 			<div class="col-6">
 				<a href="boat.php"> <- Лодки</a>
@@ -72,6 +66,44 @@ $result = mysqli_query($link, $sql);
 	</div>
 
 	<div class="container">
+		<div class="row">
+			<div class="col-5 round mx-auto text-center">
+				<p>Свободно</p>
+				<p><?php echo $available; ?> из <?php echo $curent; ?></p>
+				<p><?php echo $status; ?></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-5 round mt-4 mx-auto text-center">
+				<p>Расписание <br>
+					ПН с 07:00-21:00 <br>
+				    ВТ с 07:00-21:00 <br>
+					СР с 07:00-21:00 <br>
+					ЧТ с 07:00-21:00 <br>
+					ПТ с 07:00-21:00 <br>
+					СБ с 07:00-19:00 <br>
+					ВС Выходной
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-5 mt-4 round mx-auto text-center">
+				<p>Обращаться по номеру <br> <a href="tel:+79841026745">+79841026745</a></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-5 mt-4 round mx-auto text-center">
+				<a href="preorder.php">Перейти к предзаказу</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container mt-5">
 		<div class="row">
 			<h1>Комментарии</h1>
 		</div>
@@ -85,7 +117,7 @@ $result = mysqli_query($link, $sql);
 			</div>
 		</div>
 		<div class="row mt-5 mb-5">
-			<form action="rollers.php" method="post">
+			<form action="rollersP.php" method="post">
 				<div class="mb-3 col-6 mx-auto">
 					<label for="exampleFormControlTextarea1" class="form-label"></label>
 					<input class="form-control" type="text" aria-label="default input example" name="author" placeholder="Имя">
@@ -98,12 +130,7 @@ $result = mysqli_query($link, $sql);
 				</div>
 			</form>
 
-			<?php 
-			    if (isset($_POST['sendComment'])) {
-			        $query = "INSERT INTO rollerscomm (author, comment) VALUES ('". $_POST['author'] ."', '". $_POST['comment'] ."')";
-			        $res = mysqli_query($link, $query);
-			    }
-			 ?>
+			
 		</div>
 	</div>
 	
