@@ -93,7 +93,7 @@ $result = mysqli_query($link, $sql);
 				</div>
 				<div class="mb-3 col-6 mx-auto">
 				  	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comment" placeholder="Ваш комментарий"></textarea>
-				</div>
+				</div>	
 				<div class="col-1 mx-auto">
 					<button name="sendComment" type="submit" class="btn btn-light">Отправить</button>
 				</div>
